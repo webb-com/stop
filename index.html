@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Glass Stopwatch — Demo</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="background-overlay"></div>
+
+  <main class="scene">
+    <div class="glass-card">
+      <div class="top-row">
+        <h1>⏱ Glass Stopwatch</h1>
+        <div class="controls">
+          <button id="startBtn" class="btn primary">Start</button>
+          <button id="lapBtn" class="btn">Lap</button>
+          <button id="resetBtn" class="btn">Reset</button>
+        </div>
+      </div>
+
+      <div class="time-display" id="display">00:00.00</div>
+
+      <div class="bottom-row">
+        <ul id="laps"></ul>
+      </div>
+
+      <div class="actions">
+        <button id="copyBtn" class="btn small">Copy time</button>
+        <button id="downloadBtn" class="btn small">Download snapshot</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="js/stopwatch.js"></script>
+</body>
+</html>
